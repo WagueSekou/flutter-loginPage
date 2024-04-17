@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/login.dart';
+import 'package:flutter_app/pages/login.dart';
+import 'package:flutter_app/styles/app_colors.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,6 +14,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily:'Roboto',
+        scaffoldBackgroundColor: AppColors.background,
+      ),
       home: LoginPage(),
     );
   }
